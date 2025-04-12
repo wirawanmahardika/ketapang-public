@@ -59,6 +59,8 @@ p {
 
 .nav-link {
 	position: relative;
+	color: white;
+	font-size: 18px;
 }
 
 .nav-link:after {
