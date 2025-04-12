@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+@config "../tailwind.config.js";
+@source "../index.html";
+
+@layer utilities {
+	.nav-link {
+		position: relative;
+		color: white;
+		font-size: 18px;
+		@apply text-white font-medium hover:text-blue-400;
+	}
+
+	.nav-link:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #3b82f6;
+		transition: width 0.3s ease;
+	}
+
+	.nav-link:hover:after {
+		width: 100%;
+	}
+
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	}
+
+
+	.stat-card {
+		transition: all 0.3s ease;
+	}
+
+	.stat-card:hover {
+		background-color: #1e40af;
+		color: white;
+	}
+
+	.testimonial-card {
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	}
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+
+@layer base {
+
+
+	.chart-container {
+		position: relative;
+		height: 400px;
+		width: 100%;
+	}
+
+	.progress-bar {
+		height: 8px;
+		border-radius: 4px;
+		background-color: #e5e7eb;
+		overflow: hidden;
+	}
+
+	.progress-bar-fill {
+		height: 100%;
+		border-radius: 4px;
+		background: linear-gradient(90deg, #3b82f6, #1e40af);
+		transition: width 0.5s ease;
+	}
+
+	.stage-indicator {
+		position: relative;
+		height: 10px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.stage-indicator-fill {
+		height: 100%;
+		border-radius: 5px;
+		transition: width 1s ease;
+	}
+
+	.budget-category {
+		transition: all 0.3s ease;
+	}
+
+	.budget-category:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	}
+
+}

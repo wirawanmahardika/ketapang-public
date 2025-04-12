@@ -6,5 +6,6 @@
 
   "scripts": {
     "dev" : "tailwindcss -i ./src/style.css -o ./src/output.css --watch"
-  }
+  },
+  "type": "module"
 }
