@@ -25,13 +25,14 @@
 
           <!-- Mobile menu button -->
           <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-800 focus:outline-none ring-2 ring-black rounded px-4 py-3 flex items-center justify-center">
+            <button id="menu-toggle"
+              class="text-gray-800 focus:outline-none ring-2 ring-black rounded px-4 py-3 flex items-center justify-center">
               <i class="fas fa-bars text-black text-xl"></i>
             </button>
           </div>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden md:flex items-center space-x-8">
+          <nav class="hidden md:flex items-center space-x-8 text-xs lg:text-sm xl:text-base">
             <a href="#" class="nav-link ">Home</a>
             <a href="#" class="nav-link ">Tentang SICESA</a>
             <a href="#" class="nav-link ">Fitur Unggulan SICESA</a>
@@ -77,15 +78,91 @@
               </div>
             </div>
           </div>
-          <div class="md:w-1/2 bg-red-900">
-            <img src="/assets/main-screen.png"
-              alt="SICESA Dashboard" class="rounded-lg w-2/3 md:w-2/5 mx-auto absolute right-0 top-3/5 md:-translate-y-1/2 -translate-y-1/4" />
+          <div class="hidden md:block md:w-1/2 bg-red-900">
+            <img src="/assets/main-screen.png" alt="SICESA Dashboard"
+              class="rounded-lg w-2/3 md:w-2/5 mx-auto absolute right-0 top-3/5 md:-translate-y-1/2 -translate-y-1/4" />
           </div>
         </div>
       </div>
     </section>
-
   </div>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+          <img src="/assets/laptop.png" alt="About SICESA" class="rounded-lg w-full" />
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 font-heading">
+            Tentang SICESA
+          </h2>
+          <p class="text-gray-600 mb-6">
+            SICESA (Sistem Cepat Administrasi Kabupaten Ketapang) adalah
+            platform digital yang dirancang khusus untuk mempermudah
+            administrasi dan pengelolaan data pembangunan desa di Kabupaten
+            Ketapang.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Dikembangkan dengan pendekatan berbasis data, SICESA membantu
+            pemerintah desa, kecamatan, dan kabupaten dalam merencanakan,
+            memantau, dan mengevaluasi pembangunan desa secara lebih efektif
+            dan efisien.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="flex items-start">
+              <div class="bg-primary text-white p-2 rounded-full mr-4">
+                <i class="fas fa-check text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark mb-1">Transparansi</h4>
+                <p class="text-gray-600 text-sm">
+                  Meningkatkan akuntabilitas pengelolaan dana desa
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary text-white p-2 rounded-full mr-4">
+                <i class="fas fa-check text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark mb-1">Efisiensi</h4>
+                <p class="text-gray-600 text-sm">
+                  Memangkas waktu administrasi hingga 70%
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary text-white p-2 rounded-full mr-4">
+                <i class="fas fa-check text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark mb-1">Integrasi</h4>
+                <p class="text-gray-600 text-sm">
+                  Sistem terhubung dengan database pusat
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-primary text-white p-2 rounded-full mr-4">
+                <i class="fas fa-check text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark mb-1">Aksesibilitas</h4>
+                <p class="text-gray-600 text-sm">
+                  Dapat diakses kapan saja dan di mana saja
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Features Section -->
   <section id="features" class="py-20 bg-white">
@@ -173,123 +250,6 @@
             Generasi laporan otomatis dan analisis data untuk pengambilan
             keputusan berbasis data.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-center">
-        <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
-          <img src="https://siapdesa.bojonegorokab.go.id/assets/img/about-img.jpg" alt="About SICESA"
-            class="rounded-lg shadow-lg w-full" />
-        </div>
-        <div class="lg:w-1/2">
-          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 font-heading">
-            Tentang SICESA
-          </h2>
-          <p class="text-gray-600 mb-6">
-            SICESA (Sistem Cepat Administrasi Kabupaten Ketapang) adalah
-            platform digital yang dirancang khusus untuk mempermudah
-            administrasi dan pengelolaan data pembangunan desa di Kabupaten
-            Ketapang.
-          </p>
-          <p class="text-gray-600 mb-6">
-            Dikembangkan dengan pendekatan berbasis data, SICESA membantu
-            pemerintah desa, kecamatan, dan kabupaten dalam merencanakan,
-            memantau, dan mengevaluasi pembangunan desa secara lebih efektif
-            dan efisien.
-          </p>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div class="flex items-start">
-              <div class="bg-primary text-white p-2 rounded-full mr-4">
-                <i class="fas fa-check text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark mb-1">Transparansi</h4>
-                <p class="text-gray-600 text-sm">
-                  Meningkatkan akuntabilitas pengelolaan dana desa
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-primary text-white p-2 rounded-full mr-4">
-                <i class="fas fa-check text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark mb-1">Efisiensi</h4>
-                <p class="text-gray-600 text-sm">
-                  Memangkas waktu administrasi hingga 70%
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-primary text-white p-2 rounded-full mr-4">
-                <i class="fas fa-check text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark mb-1">Integrasi</h4>
-                <p class="text-gray-600 text-sm">
-                  Sistem terhubung dengan database pusat
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-primary text-white p-2 rounded-full mr-4">
-                <i class="fas fa-check text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark mb-1">Aksesibilitas</h4>
-                <p class="text-gray-600 text-sm">
-                  Dapat diakses kapan saja dan di mana saja
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Statistics Section -->
-  <section id="stats" class="py-20 bg-primary text-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">
-          SICESA dalam Angka
-        </h2>
-        <p class="max-w-2xl mx-auto opacity-90">
-          Dampak nyata platform kami dalam mendukung pembangunan desa di
-          Kabupaten Ketapang
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Stat 1 -->
-        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
-          <div class="text-4xl font-bold mb-2 font-heading">42</div>
-          <div class="text-sm opacity-90">Desa Terdaftar</div>
-        </div>
-
-        <!-- Stat 2 -->
-        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
-          <div class="text-4xl font-bold mb-2 font-heading">1,250+</div>
-          <div class="text-sm opacity-90">Dokumen RPJMD</div>
-        </div>
-
-        <!-- Stat 3 -->
-        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
-          <div class="text-4xl font-bold mb-2 font-heading">85%</div>
-          <div class="text-sm opacity-90">Peningkatan Efisiensi</div>
-        </div>
-
-        <!-- Stat 4 -->
-        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
-          <div class="text-4xl font-bold mb-2 font-heading">24/7</div>
-          <div class="text-sm opacity-90">Akses Sistem</div>
         </div>
       </div>
     </div>
@@ -407,148 +367,6 @@
     </div>
   </section>
 
-  <!-- Village Planning Stages Section -->
-  <section id="planning-stages" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
-          Tahap Perencanaan Desa
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          Distribusi desa di Kabupaten Ketapang berdasarkan tahap perencanaan
-          pembangunan
-        </p>
-      </div>
-
-      <div class="bg-white rounded-xl p-8 shadow-sm">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-xl font-bold text-dark mb-6">
-              Jumlah Desa per Tahap
-            </h3>
-
-            <div class="space-y-6">
-              <!-- Stage 1 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Penyusunan Dokumen</span>
-                  <span class="font-bold text-primary">12 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-100" style="width: 29%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 2 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Verifikasi Dokumen</span>
-                  <span class="font-bold text-primary">8 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-200" style="width: 19%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 3 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Pengesahan Dokumen</span>
-                  <span class="font-bold text-primary">15 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-300" style="width: 36%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 4 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Implementasi Program</span>
-                  <span class="font-bold text-primary">7 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-400" style="width: 17%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="chart-container">
-              <canvas id="planningStagesChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-100 p-3 rounded-full mr-4">
-                <i class="fas fa-file-alt text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Penyusunan Dokumen</h4>
-                <p class="text-gray-500 text-sm">12 Desa (29%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Tahap awal perencanaan dimana desa menyusun dokumen RPJMD dan
-              RKP Desa.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-200 p-3 rounded-full mr-4">
-                <i class="fas fa-check-circle text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Verifikasi Dokumen</h4>
-                <p class="text-gray-500 text-sm">8 Desa (19%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Dokumen yang telah disusun diverifikasi oleh tim ahli dan
-              pemerintah kecamatan.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-300 p-3 rounded-full mr-4">
-                <i class="fas fa-stamp text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Pengesahan Dokumen</h4>
-                <p class="text-gray-500 text-sm">15 Desa (36%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Dokumen yang telah diverifikasi disahkan oleh kepala desa dan
-              BPD.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-400 p-3 rounded-full mr-4">
-                <i class="fas fa-hammer text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Implementasi Program</h4>
-                <p class="text-gray-500 text-sm">7 Desa (17%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Program pembangunan telah dilaksanakan berdasarkan dokumen yang
-              disahkan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Budget Allocation Section -->
   <section id="budget-allocation" class="py-20 bg-white">
@@ -692,6 +510,191 @@
                 class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition duration-300">Lihat
                 Detail</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Statistics Section -->
+  <section id="stats" class="py-20 bg-primary text-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">
+          SICESA dalam Angka
+        </h2>
+        <p class="max-w-2xl mx-auto opacity-90">
+          Dampak nyata platform kami dalam mendukung pembangunan desa di
+          Kabupaten Ketapang
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Stat 1 -->
+        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
+          <div class="text-4xl font-bold mb-2 font-heading">42</div>
+          <div class="text-sm opacity-90">Desa Terdaftar</div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
+          <div class="text-4xl font-bold mb-2 font-heading">1,250+</div>
+          <div class="text-sm opacity-90">Dokumen RPJMD</div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
+          <div class="text-4xl font-bold mb-2 font-heading">85%</div>
+          <div class="text-sm opacity-90">Peningkatan Efisiensi</div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="stat-card bg-white/20 p-8 rounded-lg text-center">
+          <div class="text-4xl font-bold mb-2 font-heading">24/7</div>
+          <div class="text-sm opacity-90">Akses Sistem</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Village Planning Stages Section -->
+  <section id="planning-stages" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
+          Tahap Perencanaan Desa
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Distribusi desa di Kabupaten Ketapang berdasarkan tahap perencanaan
+          pembangunan
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-dark mb-6">
+              Jumlah Desa per Tahap
+            </h3>
+
+            <div class="space-y-6">
+              <!-- Stage 1 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium text-gray-700">Penyusunan Dokumen</span>
+                  <span class="font-bold text-primary">12 Desa</span>
+                </div>
+                <div class="stage-indicator">
+                  <div class="stage-indicator-fill bg-blue-100" style="width: 29%"></div>
+                </div>
+              </div>
+
+              <!-- Stage 2 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium text-gray-700">Verifikasi Dokumen</span>
+                  <span class="font-bold text-primary">8 Desa</span>
+                </div>
+                <div class="stage-indicator">
+                  <div class="stage-indicator-fill bg-blue-200" style="width: 19%"></div>
+                </div>
+              </div>
+
+              <!-- Stage 3 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium text-gray-700">Pengesahan Dokumen</span>
+                  <span class="font-bold text-primary">15 Desa</span>
+                </div>
+                <div class="stage-indicator">
+                  <div class="stage-indicator-fill bg-blue-300" style="width: 36%"></div>
+                </div>
+              </div>
+
+              <!-- Stage 4 -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium text-gray-700">Implementasi Program</span>
+                  <span class="font-bold text-primary">7 Desa</span>
+                </div>
+                <div class="stage-indicator">
+                  <div class="stage-indicator-fill bg-blue-400" style="width: 17%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="chart-container">
+              <canvas id="planningStagesChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-file-alt text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark">Penyusunan Dokumen</h4>
+                <p class="text-gray-500 text-sm">12 Desa (29%)</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Tahap awal perencanaan dimana desa menyusun dokumen RPJMD dan
+              RKP Desa.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-200 p-3 rounded-full mr-4">
+                <i class="fas fa-check-circle text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark">Verifikasi Dokumen</h4>
+                <p class="text-gray-500 text-sm">8 Desa (19%)</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Dokumen yang telah disusun diverifikasi oleh tim ahli dan
+              pemerintah kecamatan.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-300 p-3 rounded-full mr-4">
+                <i class="fas fa-stamp text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark">Pengesahan Dokumen</h4>
+                <p class="text-gray-500 text-sm">15 Desa (36%)</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Dokumen yang telah diverifikasi disahkan oleh kepala desa dan
+              BPD.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-400 p-3 rounded-full mr-4">
+                <i class="fas fa-hammer text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-dark">Implementasi Program</h4>
+                <p class="text-gray-500 text-sm">7 Desa (17%)</p>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Program pembangunan telah dilaksanakan berdasarkan dokumen yang
+              disahkan.
+            </p>
           </div>
         </div>
       </div>

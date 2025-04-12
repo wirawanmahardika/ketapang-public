@@ -9,7 +9,6 @@
 	.nav-link {
 		position: relative;
 		color: white;
-		font-size: 18px;
 		@apply text-white font-medium hover:text-blue-400;
 	}
 
