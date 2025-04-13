@@ -7,6 +7,7 @@
   <title>SICESA - Sistem Cepat Administrasi Kabupaten Ketapang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="./css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -562,7 +563,7 @@
   </section>
 
   <!-- Potensial SDM -->
-  <section id="planning-stages" class="py-20 bg-gray-50 bg-gray">
+  <section id="potensial-sdm" class="py-20 bg-gray-50 bg-gray">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
@@ -627,126 +628,126 @@
 
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1113366.2217899535!2d110.12970017422762!3d-1.6667874509086653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e044cf6da61153f%3A0x201126c1f8e4178!2sKabupaten%20Ketapang%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1744512024107!5m2!1sid!2sid" style="border:0;" class="w-full h-full" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1113366.2217899535!2d110.12970017422762!3d-1.6667874509086653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e044cf6da61153f%3A0x201126c1f8e4178!2sKabupaten%20Ketapang%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1744512024107!5m2!1sid!2sid"
+          style="border:0;" class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
+  <!-- Berita Desa Dan Kabupaten -->
+  <section id="news" class="py-20 bg-gray-50 bg-gray">
+    <div class="mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
-          Apa Kata Mereka?
+          Berita Desa & Kabupaten
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Testimoni dari pengguna SICESA di Kabupaten Ketapang
+          Infomasi terkini seputar kegiatan, kebijakan, dan perkembangan di tingkat kabupaten maupun desa
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card bg-white p-8 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-1.png')] bg-cover bg-center text-white">
+              <div class="flex flex-col h-full p-4">
+                <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+                <p class="mt-2 break-words">
+                  Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+                </p>
+
+                <span class="mt-auto font-bold">
+                  Read More &nbsp;
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
             </div>
           </div>
-          <p class="text-gray-600 mb-6">
-            "SICESA sangat membantu kami dalam menyusun RPJMD desa. Sistem
-            yang mudah digunakan dengan fitur yang sangat lengkap."
-          </p>
-          <div class="flex items-center">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4" />
-            <div>
-              <h4 class="font-bold text-dark">Budi Santoso</h4>
-              <p class="text-gray-500 text-sm">Kepala Desa Sukamaju</p>
+          <div class="swiper-slide">
+            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-2.png')] bg-cover bg-center text-white">
+              <div class="flex flex-col h-full p-4">
+                <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+                <p class="mt-2 break-words">
+                  Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+                </p>
+                
+                <span class="mt-auto font-bold">
+                  Read More &nbsp;
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-3.png')] bg-cover bg-center text-white">
+              <div class="flex flex-col h-full p-4">
+                <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+                <p class="mt-2 break-words">
+                  Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+                </p>
+
+                <span class="mt-auto font-bold">
+                  Read More &nbsp;
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card bg-white p-8 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-6">
-            "Dengan SICESA, pemantauan IDM menjadi lebih mudah dan real-time.
-            Kami bisa langsung mengetahui perkembangan desa kami."
-          </p>
-          <div class="flex items-center">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User"
-              class="w-12 h-12 rounded-full mr-4" />
-            <div>
-              <h4 class="font-bold text-dark">Dewi Lestari</h4>
-              <p class="text-gray-500 text-sm">
-                Sekretaris Desa Harapan Baru
-              </p>
-            </div>
+
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+
+      <!-- WRAPPER SLIDER (Scrollable secara horizontal) -->
+      <!-- <div class="flex space-x-5 overflow-x-auto px-4">
+        <div
+          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-1.png')] bg-cover bg-center text-white">
+          <div class="flex flex-col h-full p-4">
+            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+            <p class="mt-2 break-words">
+              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+            </p>
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card bg-white p-8 rounded-lg shadow-sm">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
+        <div
+          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-2.png')] bg-cover bg-center text-white">
+          <div class="flex flex-col h-full p-4">
+            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+            <p class="mt-2 break-words">
+              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+            </p>
           </div>
-          <p class="text-gray-600 mb-6">
-            "Penganggaran desa menjadi lebih transparan dengan SICESA.
-            Masyarakat bisa melihat langsung alokasi dana untuk setiap
-            program."
-          </p>
-          <div class="flex items-center">
-            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="w-12 h-12 rounded-full mr-4" />
-            <div>
-              <h4 class="font-bold text-dark">Agus Setiawan</h4>
-              <p class="text-gray-500 text-sm">Bendahara Desa Makmur Jaya</p>
-            </div>
+        </div>
+
+        <div
+          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-3.png')] bg-cover bg-center text-white">
+          <div class="flex flex-col h-full p-4">
+            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
+            <p class="mt-2 break-words">
+              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
+            </p>
           </div>
         </div>
       </div>
+ -->
+
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="bg-primary rounded-2xl p-12 text-center text-white">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 font-heading">
-          Siap Menggunakan SICESA?
-        </h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-          Bergabunglah dengan desa-desa lain di Kabupaten Ketapang yang telah
-          merasakan manfaat sistem administrasi desa digital.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <a href="#"
-            class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Daftar
-            Sekarang</a>
-          <a href="#"
-            class="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition duration-300">Hubungi
-            Kami</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-gray-300 py-12">
@@ -846,7 +847,9 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/js/script.js"></script>
+  <script src="/js/swiper.js"></script>
 </body>
 
 </html>
