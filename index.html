@@ -561,27 +561,74 @@
     </div>
   </section>
 
-  <!-- Village Planning Stages Section -->
+  <!-- Potensial SDM -->
   <section id="planning-stages" class="py-20 bg-gray-50 bg-gray">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
-          APBDes Ketapang
+          Potensial SDM
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Distribusi anggara desa untuk program prioritas di Kabupaten Ketapang
+          Data penduduk yang berpotensi aktif dalam kegiatan pembangunan desa
         </p>
       </div>
 
-      <div class="grid grid-cols-2 bg-gray-100 p-3 gap-4">
-        <div class="flex flex-col col-span-2">
-          <span class="font-semibold text-2xl">Alokasi Anggaran Per Kategori</span>
-          <div>
-            <canvas id="myBarChart" width="400" height="200"></canvas>
-            <script src="/js/barChart.js"></script>
-          </div>
-        </div>
-        <div class="flex"></div>
+      <div class="grid grid-cols-2 gap-4">
+        <table class="h-fit">
+          <thead>
+            <tr class="bg-sky-300 text-gray-800">
+              <th class="p-4">Potensi SDM</th>
+              <th class="p-4">Nama Desa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-[#f0f0f0]">
+              <td class="p-6">Penduduk Usia Produktif (15 - 64 tahun)</td>
+              <td class="p-6">245</td>
+            </tr>
+            <tr>
+              <td class="p-6">Penduduk Usia Kerja > 18 tahun</td>
+              <td class="p-6">87</td>
+            </tr>
+            <tr class="bg-[#f0f0f0]">
+              <td class="p-6">Lulusan SMA Sederajat</td>
+              <td class="p-6">55</td>
+            </tr>
+            <tr>
+              <td class="p-6">Lulusan Perguruan Tinggi</td>
+              <td class="p-6">33</td>
+            </tr>
+            <tr class="bg-[#f0f0f0]">
+              <td class="p-6">Petani Aktif</td>
+              <td class="p-6">48</td>
+            </tr>
+            <tr>
+              <td class="p-6">UMKM Aktif</td>
+              <td class="p-6">9</td>
+            </tr>
+            <tr class="bg-[#f0f0f0]">
+              <td class="p-6">Tenaga Kerja Terampil (Tukang, Mekanik, Dll.)</td>
+              <td class="p-6">26</td>
+            </tr>
+            <tr>
+              <td class="p-6">Tenaga Pengajar/Pendidik</td>
+              <td class="p-6">26</td>
+            </tr>
+            <tr class="bg-[#f0f0f0]">
+              <td class="p-6">Ibu Rumah Tangga Produktif</td>
+              <td class="p-6">20</td>
+            </tr>
+            <tr>
+              <td class="p-6">Peduda Karang Taruna</td>
+              <td class="p-6">19</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1113366.2217899535!2d110.12970017422762!3d-1.6667874509086653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e044cf6da61153f%3A0x201126c1f8e4178!2sKabupaten%20Ketapang%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1744512024107!5m2!1sid!2sid" style="border:0;" class="w-full h-full" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
