@@ -373,7 +373,7 @@
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
-          Alokasi Anggaran Prioritas
+          APBDes Ketapang
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
           Distribusi anggaran desa untuk program prioritas di Kabupaten
@@ -388,7 +388,10 @@
               Alokasi Anggaran per Kategori
             </h3>
             <div class="chart-container">
-              <canvas id="budgetAllocationChart"></canvas>
+              <div>
+                <canvas id="myBarChart" width="400" height="200"></canvas>
+                <script src="/js/barChart.js"></script>
+              </div>
             </div>
           </div>
 
@@ -559,144 +562,26 @@
   </section>
 
   <!-- Village Planning Stages Section -->
-  <section id="planning-stages" class="py-20 bg-gray-50">
+  <section id="planning-stages" class="py-20 bg-gray-50 bg-gray">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4 font-heading">
-          Tahap Perencanaan Desa
+          APBDes Ketapang
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Distribusi desa di Kabupaten Ketapang berdasarkan tahap perencanaan
-          pembangunan
+          Distribusi anggara desa untuk program prioritas di Kabupaten Ketapang
         </p>
       </div>
 
-      <div class="bg-white rounded-xl p-8 shadow-sm">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-2 bg-gray-100 p-3 gap-4">
+        <div class="flex flex-col col-span-2">
+          <span class="font-semibold text-2xl">Alokasi Anggaran Per Kategori</span>
           <div>
-            <h3 class="text-xl font-bold text-dark mb-6">
-              Jumlah Desa per Tahap
-            </h3>
-
-            <div class="space-y-6">
-              <!-- Stage 1 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Penyusunan Dokumen</span>
-                  <span class="font-bold text-primary">12 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-100" style="width: 29%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 2 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Verifikasi Dokumen</span>
-                  <span class="font-bold text-primary">8 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-200" style="width: 19%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 3 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Pengesahan Dokumen</span>
-                  <span class="font-bold text-primary">15 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-300" style="width: 36%"></div>
-                </div>
-              </div>
-
-              <!-- Stage 4 -->
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium text-gray-700">Implementasi Program</span>
-                  <span class="font-bold text-primary">7 Desa</span>
-                </div>
-                <div class="stage-indicator">
-                  <div class="stage-indicator-fill bg-blue-400" style="width: 17%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="chart-container">
-              <canvas id="planningStagesChart"></canvas>
-            </div>
+            <canvas id="myBarChart" width="400" height="200"></canvas>
+            <script src="/js/barChart.js"></script>
           </div>
         </div>
-
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-100 p-3 rounded-full mr-4">
-                <i class="fas fa-file-alt text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Penyusunan Dokumen</h4>
-                <p class="text-gray-500 text-sm">12 Desa (29%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Tahap awal perencanaan dimana desa menyusun dokumen RPJMD dan
-              RKP Desa.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-200 p-3 rounded-full mr-4">
-                <i class="fas fa-check-circle text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Verifikasi Dokumen</h4>
-                <p class="text-gray-500 text-sm">8 Desa (19%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Dokumen yang telah disusun diverifikasi oleh tim ahli dan
-              pemerintah kecamatan.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-300 p-3 rounded-full mr-4">
-                <i class="fas fa-stamp text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Pengesahan Dokumen</h4>
-                <p class="text-gray-500 text-sm">15 Desa (36%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Dokumen yang telah diverifikasi disahkan oleh kepala desa dan
-              BPD.
-            </p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-400 p-3 rounded-full mr-4">
-                <i class="fas fa-hammer text-blue-600"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-dark">Implementasi Program</h4>
-                <p class="text-gray-500 text-sm">7 Desa (17%)</p>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm">
-              Program pembangunan telah dilaksanakan berdasarkan dokumen yang
-              disahkan.
-            </p>
-          </div>
-        </div>
+        <div class="flex"></div>
       </div>
     </div>
   </section>
