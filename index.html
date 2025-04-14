@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SICESA - Sistem Cepat Administrasi Kabupaten Ketapang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="./css/style.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -14,14 +14,14 @@
 
 <body class="font-sans bg-gray-50">
 
-  <div class="flex flex-col h-screen bg-[url('/assets/background-top.jpg')] bg-cover bg-bottom">
+  <div class="flex flex-col h-[40rem] md:h-screen bg-cover bg-bottom" style="background-image: url('./assets/background-top.jpg');">
     <!-- Header/Navigation -->
     <header class="relative top-0 z-50">
       <div class="container mx-auto px-6 py-3 relative sm:bg-transparent bg-light">
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="flex items-center">
-            <img src="/assets/logos.png" alt="">
+            <img src="./assets/logos.png" alt="">
           </div>
 
           <!-- Mobile menu button -->
@@ -79,8 +79,8 @@
             </div>
           </div>
           <div class="hidden md:block md:w-1/2 bg-red-900">
-            <img src="/assets/main-screen.png" alt="SICESA Dashboard"
-              class="rounded-lg w-2/3 md:w-2/5 mx-auto absolute right-0 top-3/5 md:-translate-y-1/2 -translate-y-1/4" />
+            <img src="./assets/main-screen.png" alt="SICESA Dashboard"
+              class="rounded-lg w-2/3 md:w-1/2 lg:w-2/5 mx-auto absolute right-0 top-3/5 md:-translate-y-4/5 lg:-translate-y-2/3 xl:-translate-y-1/2 -translate-y-1/4" />
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
     <div class="container mx-auto px-6">
       <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
-          <img src="/assets/laptop.png" alt="About SICESA" class="rounded-lg w-full" />
+          <img src="./assets/laptop.png" alt="About SICESA" class="rounded-lg w-full" />
         </div>
         <div class="lg:w-1/2">
           <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 font-heading">
@@ -650,7 +650,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-1.png')] bg-cover bg-center text-white">
+            <div class="rounded-md h-96 p-6 bg-[url('./assets/berita-1.png')] bg-cover bg-center text-white">
               <div class="flex flex-col h-full p-4">
                 <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
                 <p class="mt-2 break-words">
@@ -665,7 +665,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-2.png')] bg-cover bg-center text-white">
+            <div class="rounded-md h-96 p-6 bg-[url('./assets/berita-2.png')] bg-cover bg-center text-white">
               <div class="flex flex-col h-full p-4">
                 <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
                 <p class="mt-2 break-words">
@@ -680,7 +680,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="rounded-md h-96 p-6 bg-[url('/assets/berita-3.png')] bg-cover bg-center text-white">
+            <div class="rounded-md h-96 p-6 bg-[url('./assets/berita-3.png')] bg-cover bg-center text-white">
               <div class="flex flex-col h-full p-4">
                 <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
                 <p class="mt-2 break-words">
@@ -697,52 +697,13 @@
         </div>
 
 
-        <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
-
-
-      <!-- WRAPPER SLIDER (Scrollable secara horizontal) -->
-      <!-- <div class="flex space-x-5 overflow-x-auto px-4">
-        <div
-          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-1.png')] bg-cover bg-center text-white">
-          <div class="flex flex-col h-full p-4">
-            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
-            <p class="mt-2 break-words">
-              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-2.png')] bg-cover bg-center text-white">
-          <div class="flex flex-col h-full p-4">
-            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
-            <p class="mt-2 break-words">
-              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex-shrink-0 w-2/5 rounded-md p-6 h-64 bg-[url('/assets/berita-3.png')] bg-cover bg-center text-white">
-          <div class="flex flex-col h-full p-4">
-            <h3 class="capitalize font-semibold text-2xl">Bupati ketapang resmikan layanan kesehatan</h3>
-            <p class="mt-2 break-words">
-              Ditandai dengan penandatanganan prasasti dan pemotongan pita, Bupati Ketapang Alexander Wilyo.
-            </p>
-          </div>
-        </div>
-      </div>
- -->
-
     </div>
   </section>
 
@@ -755,7 +716,7 @@
         <div>
           <div class="flex items-center mb-4">
             <div class="p-2 rounded-lg mr-3">
-              <img src="/assets/sicesa-logo.png" alt="sicesa-logo">
+              <img src="./assets/sicesa-logo.png" alt="sicesa-logo">
             </div>
             <a href="#" class="text-2xl font-bold text-white">SICESA</a>
           </div>
