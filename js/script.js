@@ -15,6 +15,38 @@ window.addEventListener("scroll", function () {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  // Style configuration
+  const styles = {
+    initial: {
+      background: 'transparent',
+      backdropFilter: 'none',
+      boxShadow: 'none'
+    },
+    scrolled: {
+      background: '#1e3a8a',
+    },
+    transition: 'all 0.3s ease-in-out'
+  };
+
+  // Apply initial transition
+  header.style.transition = styles.transition;
+
+  function handleScroll() {
+    if (window.scrollY > 50) {
+      Object.assign(header.style, styles.scrolled);
+    } else {
+      Object.assign(header.style, styles.initial);
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Initialize
+});
+
 document
   .getElementById("back-to-top")
   .addEventListener("click", function () {
@@ -56,11 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const idmChart = new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["2019", "2020", "2021", "2022", "2023"],
+      labels: ["2020", "2021", "2022", "2023", "2024"],
       datasets: [
         {
           label: "Rata-rata IDM Kabupaten",
-          data: [0.62, 0.65, 0.68, 0.72, 0.78],
+          data: [0.66, 0.69, 0.73, 0.76, 0.78],
           borderColor: "#3b82f6",
           backgroundColor: "rgba(59, 130, 246, 0.05)",
           borderWidth: 3,
@@ -69,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           label: "Desa Tertinggi",
-          data: [0.72, 0.75, 0.78, 0.82, 0.86],
+          data: [0.89, 0.91, 0.94, 0.98, 0.98],
           borderColor: "#10b981",
           backgroundColor: "rgba(16, 185, 129, 0.05)",
           borderWidth: 2,
@@ -79,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           label: "Desa Terendah",
-          data: [0.52, 0.55, 0.58, 0.62, 0.68],
+          data: [0.45, 0.49, 0.52, 0.60, 0.60],
           borderColor: "#ef4444",
           backgroundColor: "rgba(239, 68, 68, 0.05)",
           borderWidth: 2,
@@ -127,8 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
       scales: {
         y: {
           beginAtZero: false,
-          min: 0.5,
-          max: 0.9,
+          min: 0.4,
+          max: 1,
           ticks: {
             stepSize: 0.1,
             callback: function (value) {
