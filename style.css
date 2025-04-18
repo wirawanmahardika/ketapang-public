@@ -5,7 +5,6 @@
   :root, :host {
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-900: oklch(39.6% 0.141 25.723);
     --color-yellow-100: oklch(97.3% 0.071 103.193);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
@@ -16,6 +15,7 @@
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -243,26 +243,11 @@
   .\!z-0 {
     z-index: 0 !important;
   }
-  .z-0 {
-    z-index: 0;
-  }
-  .z-0\! {
-    z-index: 0 !important;
-  }
-  .z-10 {
-    z-index: 10;
-  }
   .z-20 {
     z-index: 20;
   }
   .z-50 {
     z-index: 50;
-  }
-  .z-\[999\] {
-    z-index: 999;
-  }
-  .z-\[9999999\] {
-    z-index: 9999999;
   }
   .container {
     width: 100%;
@@ -357,9 +342,6 @@
   .h-4\/5 {
     height: calc(4/5 * 100%);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -387,26 +369,17 @@
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
-  .w-3\/5 {
-    width: calc(3/5 * 100%);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
-  }
-  .flex-grow {
-    flex-grow: 1;
-  }
-  .grow {
-    flex-grow: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -700,6 +673,9 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
+  .text-blue-800 {
+    color: var(--color-blue-800);
+  }
   .text-dark {
     color: #1e293b;
   }
@@ -770,10 +746,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .outline-none {
-    --tw-outline-style: none;
-    outline-style: none;
   }
   .hover\:bg-secondary {
     &:hover {
